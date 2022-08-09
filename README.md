@@ -6,7 +6,7 @@ It is implemented leveraging on TinyGo and an Arduino Uno board.
 Hardware:
 - Arduino Uno
 - Photoresistor
-- Relays
+- Relay
 
 ![image](./docs/fritzing.png)
 
