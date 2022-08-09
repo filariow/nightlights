@@ -30,16 +30,16 @@ func main() {
 }
 
 func fetchLight(pr machine.ADC) uint16 {
-	s := uint64(0)
+	s := uint32(0)
 	for i := 1; i <= fetchRetry; i++ {
 		v := pr.Get()
-		s += uint64(v)
+		s += uint32(v)
 		if i != fetchRetry {
 			time.Sleep(sampleInterval)
 		}
 	}
 
-	return uint16(s / uint64(fetchRetry))
+	return uint16(s / uint32(fetchRetry))
 }
 
 func switchLight(led, r machine.Pin, light uint16) {
