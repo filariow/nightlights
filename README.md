@@ -8,3 +8,5 @@ Hardware:
 - Photoresistor
 - Relays
 
+![image](./docs/fritzing.png)
+
